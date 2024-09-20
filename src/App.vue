@@ -3,11 +3,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="main">
+  <div class="wrapper">
     <header class="header-wrapper">
       <div class="header-elements">
         <h1>Docmatic</h1>
-        <input type="text">
+        <input type="text" placeholder="Search this doc">
         <nav class="links">
           <RouterLink to="/">My Docs</RouterLink>
           <!-- <RouterLink to="/about">About</RouterLink> -->
@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-.main {
+.wrapper {
   min-height: screen;
   margin: 0 auto;
   width: 100%;
@@ -40,7 +40,8 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 64rem;
+  max-width: 1280px;
+  position: relative;
 }
 
 .header-elements h1 {
@@ -48,6 +49,15 @@ import { RouterLink, RouterView } from 'vue-router'
   font-size: 1.5em;
   font-weight: normal;
   color: white;
+}
+
+.header-elements input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.375em 0.75em;
+  border: none;
+  border-radius: 1rem;
 }
 
 .header-elements a {
