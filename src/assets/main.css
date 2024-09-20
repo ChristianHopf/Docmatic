@@ -1,0 +1,45 @@
+@import './base.css';
+
+@font-face{
+  font-family: 'Hack';
+  src: url('@/assets/fonts/Hack-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Hack', monospace;
+}
+
+a{
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+@media (min-width: 1024px) {
+  /* body {
+    display: flex;
+    place-items: center;
+  } */
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
